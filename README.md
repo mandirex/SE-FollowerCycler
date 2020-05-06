@@ -7,7 +7,7 @@ FOR NOW ONLY THE FOLLOWERS WORK
 Once this widget is approved by StreamElements you will be able to add it to your overlay.
 
 #### Manual Installation
-For now you can create a custom widget in your StreamElements overlay, go to the right side editing panel, click on settings, "Open Editor", and paste the content of the four files in the corresponding field in the custom widget (Fields = JSON).
+For now you can create a custom widget in your StreamElements overlay, go to the right side editing panel, click on settings, "Open Editor", and paste the content of the four files (.js, .html, .css and .json) in the corresponding field in the custom widget (Fields = JSON).
 After that you can configure the settings of the widget in the panel on the right side of the overlay editor.
 You can customize a lot of things.
 
