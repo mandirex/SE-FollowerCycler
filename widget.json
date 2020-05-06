@@ -1,0 +1,26 @@
+{
+    "amountToDisplay": {
+        "type": "number",
+        "label": "Amount of followers",
+        "value": 5,
+        "step": 1
+    },
+    "amountDelayBetweenSwitch": { 
+        "type": "number",
+        "label": "Delay between usernames",
+        "value": 1,
+        "step": 0.25
+    },
+    "usernameDisplayColor":{
+        "type": "colorpicker",
+        "label": "Displaycolor of the username",
+        "value": "#296e12"
+    },
+    "usernameDisplayFontSize":{
+        "type": "number",
+        "label": "Display Size of the username",
+        "value": "20",
+        "step": 1
+    }
+
+}
