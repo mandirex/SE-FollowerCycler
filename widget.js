@@ -7,6 +7,10 @@ let maxFollowers;
 let timeoutTime;
 let counter;
 
+// The text before and after the username:
+let prefix, suffix;
+let prefixSpace, suffixSpace;
+
 // TODO: Add support for Subscribers, Donations and Cheers!
     
 // Get the id of twitch user with username 'username'
@@ -59,6 +63,14 @@ window.addEventListener('onWidgetLoad', async function (obj) {
     maxFollowers = fieldData["amountToDisplay"];
     timeoutTime = fieldData["amountDelayBetweenSwitch"] * 1000;
 
+    prefix = fieldData["prefix"];
+    suffix = fieldData["suffix"];
+    prefixSpace = fieldData["prefixSpace"];
+    suffixSpace = fieldData["suffixSpace"];
+
+    prefix = prefix + prefixSpace ? " " : "";
+    suffix = suffix + suffixSpace ? " " : "";
+
     // The name of the channel using this extension
     channel = obj["detail"]["channel"]["username"];
 
@@ -102,7 +114,7 @@ function newFollower(name) {
 }
 
 function changeDisplay() {
-    document.querySelector("#_display").innerHTML = followers[counter];
+    document.querySelector("#_display").innerHTML = prefix + followers[counter] + suffix;
 
     counter++;
     if(counter >= maxFollowers){

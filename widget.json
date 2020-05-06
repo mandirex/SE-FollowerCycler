@@ -37,12 +37,12 @@
         "label": "Suffix",
         "value":""
     },
-    "spaceBeforeName":{
+    "prefixSpace":{
         "type":"checkbox",
         "label":"Space after prefix?",
         "value":true
     },
-    "spaceAfterName":{
+    "suffixSpace":{
         "type":"checkbox",
         "label":"Space before suffix?",
         "value":true

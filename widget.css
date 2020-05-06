@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family={usernameDisplayFont}');
 h1{
+    font-family: '{{usernameDisplayFont}}', sans-serif;
     font-size: {{usernameDisplayFontSize}}px;
     color: {{usernameDisplayColor}};
-    
 }
