@@ -1,5 +1,6 @@
 # Variable Cycler
 A Stream Elements Widget that cycles your latest followers, subscribers, donations or cheers.
+FOR NOW ONLY THE FOLLOWERS WORK
 
 ## Usage
 Once this widget is approved by StreamElements you will be able to add it to your overlay.
