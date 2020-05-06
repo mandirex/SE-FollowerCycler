@@ -21,6 +21,16 @@
         "label": "Display Size of the username",
         "value": "20",
         "step": 1
-    }
+    },
+    "prefix":{
+      "type":"text",
+        "label":"Prefix",
+        "value":"♥"
+  },
+    "suffix":{
+      "type":"text",
+        "label": "Suffix",
+        "value":""
+  }
 
 }
