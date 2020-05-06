@@ -32,15 +32,15 @@
         "label":"Prefix",
         "value":"♥"
     },
-    "suffix":{
-        "type":"text",
-        "label": "Suffix",
-        "value":""
-    },
     "prefixSpace":{
         "type":"checkbox",
         "label":"Space after prefix?",
         "value":true
+    },
+    "suffix":{
+        "type":"text",
+        "label": "Suffix",
+        "value":""
     },
     "suffixSpace":{
         "type":"checkbox",
