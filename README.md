@@ -16,7 +16,7 @@ Every time the widget is loaded it will pull your followers from the Twitch API 
 After that the newest follower will replace the last follower that was in follower storage (it will always display the *number* most recent followers (where *number* is a number you can specify in the settings in the overlay editor)).
 
 ### Shoutout
-This widget is absolutely 100% free to use. But if you want give me (MandiRex) a shoutout in your stream for creating this awesome tool.
+This widget is absolutely 100% free to use. But I (MandiRex) appreciate a shoutout on your stream! 😉
 
 ### Disclaimer
 This widget uses the Twitch API, which uses a CLIENT_ID. For now I've supplied my own CLIENT_ID, but I can't guarantee I will keep that CLIENT_ID alive.
