@@ -68,8 +68,8 @@ window.addEventListener('onWidgetLoad', async function (obj) {
     prefixSpace = fieldData["prefixSpace"];
     suffixSpace = fieldData["suffixSpace"];
 
-    prefix = prefix + prefixSpace ? " " : "";
-    suffix = suffix + suffixSpace ? " " : "";
+    prefix = prefix + (prefixSpace ? " " : "");
+    suffix = suffix + (suffixSpace ? " " : "");
 
     // The name of the channel using this extension
     channel = obj["detail"]["channel"]["username"];
