@@ -20,4 +20,4 @@ This widget is absolutely 100% free to use. But I (MandiRex) appreciate a shouto
 
 ### Disclaimer
 This widget uses the Twitch API, which uses a CLIENT_ID. For now I've supplied my own CLIENT_ID, but I can't guarantee I will keep that CLIENT_ID alive.
-If you don't want to rely on my CLIENT_ID go get yourself one [here](https://dev.twitch.tv/console/apps)
+If you don't want to rely on my CLIENT_ID go get yourself one [here](https://dev.twitch.tv/console/apps) and replace the part after client_id with your new CLIENT_ID.
