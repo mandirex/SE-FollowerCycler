@@ -22,15 +22,30 @@
         "value": "20",
         "step": 1
     },
+    "usernameDisplayFont":{
+        "type":"googleFont",
+        "label":"Font to display usernames in",
+        "value":"Roboto"
+    },
     "prefix":{
       "type":"text",
         "label":"Prefix",
         "value":"♥"
-  },
+    },
     "suffix":{
-      "type":"text",
+        "type":"text",
         "label": "Suffix",
         "value":""
-  }
+    },
+    "spaceBeforeName":{
+        "type":"checkbox",
+        "label":"Space after prefix?",
+        "value":true
+    },
+    "spaceAfterName":{
+        "type":"checkbox",
+        "label":"Space before suffix?",
+        "value":true
+    }
 
 }
