@@ -50,7 +50,7 @@
     "suffix":{
         "type":"text",
         "label": "Suffix",
-        "value":"<i class="material-icons">favorite</i>"
+        "value":"<i class=\"material-icons\">favorite</i>"
     },
     "suffixSpace":{
         "type":"checkbox",
@@ -61,5 +61,10 @@
         "type": "number",
         "label":"The vertical posistion of the icon (px)",
         "value": 2
+    },
+    "iconSize":{ 
+        "type": "number",
+        "label":"Size of the material design icons (px)",
+        "value": 24
     }
 }
