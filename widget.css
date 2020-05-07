@@ -51,6 +51,11 @@ p { display: inline }
     100% {left: 0px;}
 }
 
+@keyframes fly-in-right{
+    0%  {left: 1000px;}
+    100% {left: 0px;}
+}
+
 .animation {
     position: relative;
     animation-name: {{animation}};
