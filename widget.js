@@ -7,6 +7,7 @@ let timeoutTime;
 let counter;
 let display;
 let containerDivJQ;
+let animationDuration;
 
 // The text before and after the username:
 let prefix, suffix;
@@ -69,6 +70,8 @@ window.addEventListener('onWidgetLoad', async function (obj) {
     prefixSpace = fieldData["prefixSpace"];
     suffixSpace = fieldData["suffixSpace"];
 
+    animationDuration = fieldData["animationDuration"] * 1000;
+
     prefix = prefix;
     suffix = suffix;
 
@@ -120,11 +123,11 @@ function newFollower(name) {
 function changeDisplay() {
     containerDivJQ.addClass("animation");
     display.innerHTML = (prefixSpace ? " " : "") + followers[counter] + (suffixSpace ? " " : "");
-    containerDivJQ.removeClass("animation");
+    setTimeout(() => {containerDivJQ.removeClass("animation")}, animationDuration);
 
     counter++;
     if(counter >= maxFollowers){
         counter = 0;
     }
-    setTimeout(changeDisplay, timeoutTime);
+    setTimeout(changeDisplay, timeoutTime - animationDuration);
 }

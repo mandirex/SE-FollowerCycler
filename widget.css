@@ -47,11 +47,12 @@ p { display: inline }
 }
 
 @keyframes fly-in-left {
-    0%  {left:-100%;}
-    100% {left: 0%;}
+    0%   {left:-100px;}
+    100% {left: 0px;}
 }
 
 .animation {
+    position: relative;
     animation-name: {{animation}};
     animation-duration: {{animationDuration}};
 }
