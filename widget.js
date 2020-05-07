@@ -5,7 +5,11 @@ let followers = [];
 let maxFollowers;
 let timeoutTime;
 let counter;
+let display;
 let container;
+
+let animationDuration;
+let animationName;
 
 // The text before and after the username:
 let prefix, suffix;
@@ -68,17 +72,20 @@ window.addEventListener('onWidgetLoad', async function (obj) {
     prefixSpace = fieldData["prefixSpace"];
     suffixSpace = fieldData["suffixSpace"];
 
+    animationName = fieldData["animation"];
+    animationDuration = fieldData["animationDuration"];
+
     prefix = prefix;
     suffix = suffix;
 
     // The name of the channel using this extension
     channel = obj["detail"]["channel"]["username"];
 
-    container = document.querySelector("#_display");
+    display = document.querySelector("#_display");
     document.querySelector("#_prefix").innerHTML = prefix;
     document.querySelector("#_suffix").innerHTML = suffix;
 
-
+    container = document.querySelector("#container_div");
 
     // Get the id and the followers of the channel with channelname = channel.
     // This will make sure all maxFollower slots are filled.
@@ -117,7 +124,8 @@ function newFollower(name) {
 }
 
 function changeDisplay() {
-    container.innerHTML = (prefixSpace ? " " : "") + followers[counter] + (suffixSpace ? " " : "");
+    display.innerHTML = (prefixSpace ? " " : "") + followers[counter] + (suffixSpace ? " " : "");
+    container.style.animation = `${animationName} ${animationDuration}s`;
 
     counter++;
     if(counter >= maxFollowers){

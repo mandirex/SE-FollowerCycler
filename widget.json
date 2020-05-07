@@ -84,7 +84,7 @@
     },
     "animationDuration": {
         "type": "number",
-        "label":"Duration of the animation",
+        "label":"Duration of the animation (seconds)",
         "value": 4,
         "step": 0.25
     }

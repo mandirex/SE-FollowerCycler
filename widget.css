@@ -48,10 +48,5 @@ p { display: inline }
 
 @keyframes fly-in-left {
     0%  {left:-100%;}
-    100% {left: 0%}
-}
-
-div#container_div{
-    animation-name: {{animation}};
-    animation-duration: {{animationDuration}};
+    100% {left: 0%;}
 }
