@@ -50,3 +50,8 @@ p { display: inline }
     0%  {left:-100%;}
     100% {left: 0%;}
 }
+
+.animation {
+    animation-name: {{animation}};
+    animation-duration: {{animationDuration}};
+}
