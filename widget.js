@@ -117,7 +117,7 @@ function newFollower(name) {
 }
 
 function changeDisplay() {
-    container.innerHTML = prefix + followers[counter] + suffix;
+    container.innerHTML = (prefixSpace ? " " : "") + followers[counter] + (suffixSpace ? " " : "");
 
     counter++;
     if(counter >= maxFollowers){
