@@ -3,13 +3,13 @@
     font-family: '{{usernameDisplayFont}}', sans-serif;
     font-size: {{usernameDisplayFontSize}}px;
     color: {{usernameDisplayColor}};
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+    text-shadow: 1px 1px 1px {{backdropShadowColor}};
 }
 #_prefix{
     font-family: '{{usernameDisplayFont}}', sans-serif;
     font-size: {{usernameDisplayFontSize}}px;
     color: {{prefixDisplayColor}};
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+    text-shadow: 1px 1px 1px {{backdropShadowColor}};
 }
 #_suffix{
     font-family: '{{usernameDisplayFont}}', sans-serif;
