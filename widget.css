@@ -3,16 +3,19 @@
     font-family: '{{usernameDisplayFont}}', sans-serif;
     font-size: {{usernameDisplayFontSize}}px;
     color: {{usernameDisplayColor}};
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
 }
 #_prefix{
     font-family: '{{usernameDisplayFont}}', sans-serif;
     font-size: {{usernameDisplayFontSize}}px;
     color: {{prefixDisplayColor}};
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
 }
 #_suffix{
     font-family: '{{usernameDisplayFont}}', sans-serif;
     font-size: {{usernameDisplayFontSize}}px;
     color: {{suffixDisplayColor}};
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
 }
 p { display: inline }
 
@@ -28,6 +31,8 @@ p { display: inline }
     word-wrap: normal;
     white-space: nowrap;
     direction: ltr;
+    position: relative;
+    top: 2px;
   
     /* Support for all WebKit browsers. */
     -webkit-font-smoothing: antialiased;
