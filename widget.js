@@ -5,6 +5,7 @@ let followers = [];
 let maxFollowers;
 let timeoutTime;
 let counter;
+let container;
 
 // The text before and after the username:
 let prefix, suffix;
@@ -73,6 +74,8 @@ window.addEventListener('onWidgetLoad', async function (obj) {
     // The name of the channel using this extension
     channel = obj["detail"]["channel"]["username"];
 
+    container = document.querySelector("#_display");
+
     // Get the id and the followers of the channel with channelname = channel.
     // This will make sure all maxFollower slots are filled.
     const idResult = await getID(channel);
@@ -110,7 +113,7 @@ function newFollower(name) {
 }
 
 function changeDisplay() {
-    document.querySelector("#_display").innerHTML = prefix + followers[counter] + suffix;
+    container.innerHTML = prefix + followers[counter] + suffix;
 
     counter++;
     if(counter >= maxFollowers){
