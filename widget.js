@@ -11,21 +11,27 @@ let counter;
 let prefix, suffix;
 let prefixSpace, suffixSpace;
 
+// Client ID for the Twitch API
+const CLIENT_ID = "mg9tk88bv9x7xo1j20hodxjhr3d8mo";
+// Twitch API settings: 
+let basicSettings = {
+    "url": "",
+    "method": "GET",
+    "timeout": 0,
+    "headers": {
+        "Client-ID": CLIENT_ID,
+        "Accept": "application/vnd.twitchtv.v5+json"
+    }
+}
+
 // TODO: Add support for Subscribers, Donations and Cheers!
     
 // Get the id of twitch user with username 'username'
 function getID(username) {
 
     // TODO: Move the settings to a global variable. The URL is the only part that differs anyway.
-    var getIDSettings = {
-        "url": "https://api.twitch.tv/kraken/users?login="+username,
-        "method": "GET",
-        "timeout": 0,
-        "headers": {
-            "Client-ID": "mg9tk88bv9x7xo1j20hodxjhr3d8mo",
-            "Accept": "application/vnd.twitchtv.v5+json"
-        },
-    };
+    var getIDSettings = basicSettings;
+    getIDSettings.url = "https://api.twitch.tv/kraken/users?login="+username;
 
     return $.ajax(getIDSettings);
 }
@@ -33,15 +39,8 @@ function getID(username) {
 // Get all the followers for a Twitch channel with id = id
 function getFollowers(id) {
     let url = "https://api.twitch.tv/kraken/channels/" + id + "/follows";
-    let getFollowerSettings = {
-        "url": url,
-        "method": "GET",
-        "timeout": 0,
-        "headers": {
-            "Client-ID": "mg9tk88bv9x7xo1j20hodxjhr3d8mo",
-            "Accept": "application/vnd.twitchtv.v5+json"
-        }
-    }
+    let getFollowerSettings = basicSettings;
+    getFollowerSettings.url = url;
 
     return $.ajax(getFollowerSettings);
 }        
