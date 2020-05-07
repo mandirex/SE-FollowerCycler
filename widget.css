@@ -54,5 +54,5 @@ p { display: inline }
 .animation {
     position: relative;
     animation-name: {{animation}};
-    animation-duration: {{animationDuration}};
+    animation-duration: {{animationDuration}}s;
 }
