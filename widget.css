@@ -44,4 +44,14 @@ p { display: inline }
   
     /* Support for IE. */
     font-feature-settings: 'liga';
-  }
+}
+
+@keyframes fly-in-left {
+    0%  {left:-100%;}
+    100% {left: 0%}
+}
+
+div#container_div{
+    animation-name: {{animation}};
+    animation-duration: {{animationDuration}};
+}
