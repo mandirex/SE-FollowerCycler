@@ -29,7 +29,7 @@
     "usernameDisplayFontSize":{
         "type": "number",
         "label": "Display Size of the username",
-        "value": "20",
+        "value": 20,
         "step": 1
     },
     "usernameDisplayFont":{
@@ -40,7 +40,7 @@
     "prefix":{
       "type":"text",
         "label":"Prefix",
-        "value":"♥"
+        "value":""
     },
     "prefixSpace":{
         "type":"checkbox",
