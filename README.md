@@ -7,7 +7,7 @@ FOR NOW ONLY THE FOLLOWERS WORK
 Once this widget is approved by StreamElements you will be able to add it to your overlay.
 
 #### Manual Installation
-For now you can create a custom widget in your StreamElements overlay and paste the content of the four files in the corresponding field in the custom widget (Fields = JSON).
+For now you can create a custom widget in your StreamElements overlay, go to the right side editing panel, click on settings, "Open Editor", and paste the content of the four files (.js, .html, .css and .json) in the corresponding field in the custom widget (Fields = JSON).
 After that you can configure the settings of the widget in the panel on the right side of the overlay editor.
 You can customize a lot of things.
 
@@ -21,3 +21,6 @@ This widget is absolutely 100% free to use. But I (MandiRex) appreciate a shouto
 ### Disclaimer
 This widget uses the Twitch API, which uses a CLIENT_ID. For now I've supplied my own CLIENT_ID, but I can't guarantee I will keep that CLIENT_ID alive.
 If you don't want to rely on my CLIENT_ID go get yourself one [here](https://dev.twitch.tv/console/apps) and replace the part after Client-ID in [widget.js](widget.js) with your new CLIENT_ID.
+
+### Issues/ Bugs
+You can use the Issues tab to report issues you have with this tool
