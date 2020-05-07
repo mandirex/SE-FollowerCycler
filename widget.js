@@ -1,6 +1,5 @@
 // Some global variables:  
 let channel = "";
-let container;
 let channelID = "";
 let followers = [];
 let maxFollowers;
@@ -12,6 +11,7 @@ let prefix, suffix;
 let prefixSpace, suffixSpace;
 
 // Client ID for the Twitch API
+// You can change this out for your own CLIENT_ID:
 const CLIENT_ID = "mg9tk88bv9x7xo1j20hodxjhr3d8mo";
 // Twitch API settings: 
 let basicSettings = {
@@ -79,9 +79,6 @@ window.addEventListener('onWidgetLoad', async function (obj) {
     channelID = idResult.users[0]._id;
     const followerResult = await getFollowers(channelID);
     followers = processFollowers(followerResult.follows);
-    
-    // The container to display the names in (in this case an h1 element)
-    container = $("#_display");
     
     // Set the counter to 0 to display the first name
     counter = 0;
