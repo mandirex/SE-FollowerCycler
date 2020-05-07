@@ -7,6 +7,11 @@ For now you can create a custom widget in your StreamElements overlay, go to the
 After that you can configure the settings of the widget in the panel on the right side of the overlay editor.
 You can customize a lot of things.
 
+After installing the widget, your suffix should be <i class="material-icons">favorite</i>. This is a HTML tag that will transform into a materials design icon.
+If you want a different icon you can go to [this](https://material.io/resources/icons/?style=baseline) site, search for another icon and replace *'favorite'* with the name of the new icon.
+This works for the prefix as well.
+If you just want to use text for your prefix/suffix you can empty the box and type the text (or any unicode character) you want in the now empty box.
+
 #### Twitch API
 Every time the widget is loaded it will pull your followers from the Twitch API (Otherwise you would only be able to store the followers you got that session). 
 After that the newest follower will replace the last follower that was in follower storage (it will always display the *number* most recent followers (where *number* is a number you can specify in the settings in the overlay editor)).
