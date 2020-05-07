@@ -124,8 +124,9 @@ function newFollower(name) {
 }
 
 function changeDisplay() {
+    container.style.animation = "";
     display.innerHTML = (prefixSpace ? " " : "") + followers[counter] + (suffixSpace ? " " : "");
-    container.style.animation = `${animationName} ${animationDuration}s`;
+    container.style.animation = `${animationName} ${animationDuration}s 1`;
 
     counter++;
     if(counter >= maxFollowers){
