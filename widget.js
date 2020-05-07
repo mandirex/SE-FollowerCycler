@@ -39,7 +39,7 @@ function getID(username) {
 
 // Get all the followers for a Twitch channel with id = id
 function getFollowers(id) {
-    let url = "https://api.twitch.tv/kraken/channels/" + id + "/follows?limit="+maxFollowers;
+    let url = "https://api.twitch.tv/kraken/channels/" + id + "/follows?limit="+maxFollowers+"&direction="+"desc";
     let getFollowerSettings = basicSettings;
     getFollowerSettings.url = url;
 
