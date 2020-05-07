@@ -15,7 +15,7 @@
     font-family: '{{usernameDisplayFont}}', sans-serif;
     font-size: {{usernameDisplayFontSize}}px;
     color: {{suffixDisplayColor}};
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+    text-shadow: 1px 1px 1px {{backdropShadowColor}};
 }
 p { display: inline }
 

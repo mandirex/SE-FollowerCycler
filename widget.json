@@ -68,5 +68,10 @@
         "label":"Size of the material design icons (px)",
         "value": 24,
         "step": 1
+    },
+    "backdropShadowColor":{
+        "type":"colorpicker",
+        "label":"Color of the backdrop shadow",
+        "value": "rgba(0,0,0,0.7)"
     }
 }
