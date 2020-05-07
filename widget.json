@@ -60,11 +60,13 @@
     "iconVerticalPosition":{
         "type": "number",
         "label":"The vertical posistion of the icon (px)",
-        "value": 2
+        "value": 2,
+        "step": 0.5
     },
     "iconSize":{ 
         "type": "number",
         "label":"Size of the material design icons (px)",
-        "value": 24
+        "value": 24,
+        "step": 1
     }
 }
