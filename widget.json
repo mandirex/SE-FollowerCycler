@@ -16,6 +16,16 @@
         "label": "Displaycolor of the username",
         "value": "#296e12"
     },
+    "prefixDisplayColor": {
+        "type": "colorpicker",
+        "label": "Displaycolor of the prefix",
+        "value": "#f7c067"
+    },
+    "suffixDisplayColor": {
+        "type": "colorpicker",
+        "label": "Displaycolor of the suffix",
+        "value": "#f7c067" 
+    },
     "usernameDisplayFontSize":{
         "type": "number",
         "label": "Display Size of the username",

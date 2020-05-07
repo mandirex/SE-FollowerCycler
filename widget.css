@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family={usernameDisplayFont}');
-h1{
+#_display{
     font-family: '{{usernameDisplayFont}}', sans-serif;
     font-size: {{usernameDisplayFontSize}}px;
     color: {{usernameDisplayColor}};
+}
+#_prefix{
+    font-family: '{{usernameDisplayFont}}', sans-serif;
+    font-size: {{usernameDisplayFontSize}}px;
+    color: {{prefixDisplayColor}};
+}
+#_suffix{
+    font-family: '{{usernameDisplayFont}}', sans-serif;
+    font-size: {{usernameDisplayFontSize}}px;
+    color: {{suffixDisplayColor}};
 }

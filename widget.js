@@ -75,6 +75,10 @@ window.addEventListener('onWidgetLoad', async function (obj) {
     channel = obj["detail"]["channel"]["username"];
 
     container = document.querySelector("#_display");
+    document.querySelector("#_prefix").innerHTML = prefix;
+    document.querySelector("#_suffix").innerHTML = suffix;
+
+
 
     // Get the id and the followers of the channel with channelname = channel.
     // This will make sure all maxFollower slots are filled.
