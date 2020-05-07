@@ -56,5 +56,10 @@
         "type":"checkbox",
         "label":"Space before suffix?",
         "value":true
+    },
+    "iconVerticalPosition":{
+        "type": "number",
+        "label":"The vertical posistion of the icon (px)",
+        "value": 2
     }
 }

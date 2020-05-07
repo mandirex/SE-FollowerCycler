@@ -32,7 +32,7 @@ p { display: inline }
     white-space: nowrap;
     direction: ltr;
     position: relative;
-    top: 2px;
+    top: {{iconVerticalPosition}}px;
   
     /* Support for all WebKit browsers. */
     -webkit-font-smoothing: antialiased;
