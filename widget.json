@@ -79,7 +79,6 @@
         "label":"Animation:",
         "options": {
             "fly-in-left": "Text goes left -> right",
-            "fly-in-right": "Text goes right -> left",
             "nothing": "No animation"
         }
     },
