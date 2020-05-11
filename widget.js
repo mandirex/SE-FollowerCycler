@@ -3,11 +3,12 @@ let channel = "";
 let channelID = "";
 let followers = [];
 let maxFollowers;
-let timeoutTime;
+let usernameDisplayTime;
 let counter;
 let display;
 let containerDivJQ;
-let animationDuration;
+let inAnimationDuration;
+let outAnimationDuration;
 
 // The text before and after the username:
 let prefix, suffix;
@@ -63,26 +64,19 @@ window.addEventListener('onWidgetLoad', async function (obj) {
 
     // The amount of followers to display and the time each follower is on screen.
     maxFollowers = fieldData["amountToDisplay"];
-    timeoutTime = fieldData["amountDelayBetweenSwitch"] * 1000;
+    usernameDisplayTime = fieldData["amountDelayBetweenSwitch"] * 1000;
+    inAnimationDuration = fieldData["inAnimationDuration"] * 1000;
+    outAnimationDuration = fieldData["outAnimationDuration"] * 1000;
 
     prefix = fieldData["prefix"];
     suffix = fieldData["suffix"];
     prefixSpace = fieldData["prefixSpace"];
     suffixSpace = fieldData["suffixSpace"];
 
-    animationDuration = fieldData["animationDuration"] * 1000;
-
-    prefix = prefix;
-    suffix = suffix;
-
     // The name of the channel using this extension
     channel = obj["detail"]["channel"]["username"];
 
-    display = document.querySelector("#_display");
-    document.querySelector("#_prefix").innerHTML = prefix;
-    document.querySelector("#_suffix").innerHTML = suffix;
-
-    containerDivJQ = $("#container_div");
+    containerDiv = $("#container_div");
 
     // Get the id and the followers of the channel with channelname = channel.
     // This will make sure all maxFollower slots are filled.
@@ -121,13 +115,17 @@ function newFollower(name) {
 }
 
 function changeDisplay() {
-    containerDivJQ.addClass("animation");
-    display.innerHTML = (prefixSpace ? " " : "") + followers[counter] + (suffixSpace ? " " : "");
-    setTimeout(() => {containerDivJQ.removeClass("animation")}, animationDuration);
+    let displayText = (prefixSpace ? " " : "") + followers[counter] + (suffixSpace ? " " : "");
+    containerDiv.html("<div id=\"display_container\" class=\"in-animation\"><p id=\"prefix\">"+prefix+"</p><p id=\"display\">"+displayText+"</p><p id=\"suffix\">"+suffix+"</p></div>");
+    setTimeout(() => {
+        containerDiv.html("<div id=\"display_container\" class=\"out-animation\"><p id=\"prefix\">"+prefix+"</p><p id=\"display\">"+displayText+"</p><p id=\"suffix\">"+suffix+"</p></div>");
 
-    counter++;
-    if(counter >= maxFollowers){
-        counter = 0;
-    }
-    setTimeout(changeDisplay, timeoutTime - animationDuration);
+        counter ++;
+        if (counter >= maxFollowers) {
+            counter = 0;
+        }
+
+        setTimeout(changeDisplay, outAnimationDuration);
+    }, usernameDisplayTime - inAnimationDuration - outAnimationDuration);
+ 
 }

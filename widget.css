@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family={usernameDisplayFont}');
-#_display{
+#display{
     font-family: '{{usernameDisplayFont}}', sans-serif;
     font-size: {{usernameDisplayFontSize}}px;
     color: {{usernameDisplayColor}};
     text-shadow: 1px 1px 1px {{backdropShadowColor}};
 }
-#_prefix{
+#prefix{
     font-family: '{{usernameDisplayFont}}', sans-serif;
     font-size: {{usernameDisplayFontSize}}px;
     color: {{prefixDisplayColor}};
     text-shadow: 1px 1px 1px {{backdropShadowColor}};
 }
-#_suffix{
+#suffix{
     font-family: '{{usernameDisplayFont}}', sans-serif;
     font-size: {{usernameDisplayFontSize}}px;
     color: {{suffixDisplayColor}};
@@ -47,17 +47,28 @@ p { display: inline }
 }
 
 @keyframes fly-in-left {
-    0%   {left:-100px;}
+    0%   {left:-1000px;}
     100% {left: 0px;}
 }
 
-@keyframes fly-in-right{
-    0%  {left: 1000px;}
-    100% {left: 0px;}
+@keyframes fly-out-left {
+    0%  {left:0px;}
+    100%{left:-1000px;}
 }
 
-.animation {
+@keyframes fade-out{
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+.in-animation {
     position: relative;
-    animation-name: {{animation}};
-    animation-duration: {{animationDuration}}s;
+    animation-name: {{inAnimation}};
+    animation-duration: {{inAnimationDuration}}s;
+}
+
+.out-animation{
+    position:relative;
+    animation-name: {{outAnimation}};
+    animation-duration: {{outAnimationDuration}}s;
 }
