@@ -46,19 +46,40 @@ p { display: inline }
     font-feature-settings: 'liga';
 }
 
+/* Text flies into the window from the left side*/
 @keyframes fly-in-left {
     0%   {left:-1000px;}
     100% {left: 0px;}
 }
 
+/* Text flies out of the window towards the left side*/
 @keyframes fly-out-left {
     0%  {left:0px;}
     100%{left:-1000px;}
 }
 
+/* The alpha of the text increases until invisible*/
 @keyframes fade-out{
     0%{opacity: 1;}
     100%{opacity: 0;}
+}
+
+/* The alpha of the text decreases untill visible*/
+@keyframes fade-in {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+/* The text flies into the window for the right side*/
+@keyframes fly-in-right{
+    0%{left: 1000px;}
+    100%{left: 0px;}
+}
+
+/* The text flies out of the window towards the right side */
+@keyframes fly-out-right {
+    0%{left: 0px;}
+    100%{left: 1000px;} 
 }
 
 .in-animation {

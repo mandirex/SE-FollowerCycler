@@ -79,6 +79,8 @@
         "label":"Animation:",
         "options": {
             "fly-in-left": "Text goes left -> right",
+            "fade-in":"fade-in",
+            "fly-in-right": "Text goes right -> left",
             "nothing": "No animation"
         }
     },
@@ -87,6 +89,7 @@
         "label":"Animation:",
         "options": {
             "fly-out-left": "Text goes right -> left",
+            "fly-out-right": "Text goes left -> right",
             "fade-out": "fade-out",
             "nothing": "No animation"
         }
