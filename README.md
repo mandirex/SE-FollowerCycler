@@ -24,4 +24,4 @@ This widget uses the Twitch API, which uses a CLIENT_ID. For now I've supplied m
 If you don't want to rely on my CLIENT_ID go get yourself one [here](https://dev.twitch.tv/console/apps) and replace the part after Client-ID in [widget.js](widget.js) with your new CLIENT_ID.
 
 ### Issues/ Bugs
-You can use the Issues tab to report issues you have with this tool
+You can use the Issues tab to report issues you have with this tool.
