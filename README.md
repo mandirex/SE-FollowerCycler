@@ -1,5 +1,5 @@
 # Follower Cycler
-A Stream Elements Widget that cycles your latest followers
+This is a [Stream Elements](https://streamelements.com/) widget aimed at starting Twitch streamers who want to shoutout their most recent followers.
 
 ### Usage
 #### Manual Installation
